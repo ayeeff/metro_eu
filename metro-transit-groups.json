@@ -1,0 +1,422 @@
+{
+  "_comment": "Precomputed job matrix for metro-transit.yml, metro_eu. One job per (extract, cluster), capped at 10 cities so a single failing city cannot fail its whole group. Clustering bounds the coarse cut; the cap bounds the blast radius. Generated rather than computed in jq, which failed in CI under set -euo pipefail with no message.",
+  "perJob": 10,
+  "cityCount": 78,
+  "groupCount": 56,
+  "groups": [
+    {
+      "extract": "albania",
+      "cluster": "albania-270",
+      "cities": [
+        "tirana:19.51889,41.02754,20.11889,41.62754"
+      ]
+    },
+    {
+      "extract": "andorra",
+      "cluster": "andorra",
+      "cities": [
+        "andorra:1.21649,42.2,1.81649,42.8"
+      ]
+    },
+    {
+      "extract": "austria",
+      "cluster": "austria-40",
+      "cities": [
+        "vienna:16.06664,47.90002,16.66664,48.50001"
+      ]
+    },
+    {
+      "extract": "belarus",
+      "cluster": "belarus-255",
+      "cities": [
+        "minsk:27.26663,53.59998,27.86663,54.19998"
+      ]
+    },
+    {
+      "extract": "belgium",
+      "cluster": "belgium",
+      "cities": [
+        "brussels:4.03331,50.53332,4.63331,51.13332",
+        "ghent:3.47,50.87,3.97,51.23",
+        "saintghislain:3.66,50.27,4.16,50.63"
+      ]
+    },
+    {
+      "extract": "bosnia-herzegovina",
+      "cluster": "bosnia-herzegovina-264",
+      "cities": [
+        "sarajevo:18.083,43.55002,18.683,44.15002"
+      ]
+    },
+    {
+      "extract": "bulgaria",
+      "cluster": "bulgaria",
+      "cities": [
+        "sofia:23.01666,42.38335,23.61666,42.98335"
+      ]
+    },
+    {
+      "extract": "croatia",
+      "cluster": "croatia-237",
+      "cities": [
+        "zagreb:15.69999,45.50001,16.29999,46.10001"
+      ]
+    },
+    {
+      "extract": "czech-republic",
+      "cluster": "czech-republic-214",
+      "cities": [
+        "prague:14.16598,49.78334,14.76598,50.38334"
+      ]
+    },
+    {
+      "extract": "denmark",
+      "cluster": "denmark-219",
+      "cities": [
+        "copenhagen:12.38,55.58,12.7,55.8"
+      ]
+    },
+    {
+      "extract": "estonia",
+      "cluster": "estonia-236",
+      "cities": [
+        "tallinn:24.42805,59.13388,25.02805,59.73388"
+      ]
+    },
+    {
+      "extract": "finland",
+      "cluster": "finland-227",
+      "cities": [
+        "espoo:24.41,60.03,24.91,60.39",
+        "hamina:26.93,60.39,27.43,60.75",
+        "helsinki:24.63413,59.87556,25.23413,60.47556"
+      ]
+    },
+    {
+      "extract": "france",
+      "cluster": "france-100",
+      "cities": [
+        "paris:2.03334,48.56669,2.63333,49.16669"
+      ]
+    },
+    {
+      "extract": "france",
+      "cluster": "france-95",
+      "cities": [
+        "marseille:5.12,43.12,5.62,43.48"
+      ]
+    },
+    {
+      "extract": "france",
+      "cluster": "france-96",
+      "cities": [
+        "bordeaux:-0.83,44.66,-0.33,45.02",
+        "lyon:4.59,45.58,5.09,45.94"
+      ]
+    },
+    {
+      "extract": "germany",
+      "cluster": "germany",
+      "cities": [
+        "cologne:6.71,50.76,7.21,51.12",
+        "frankfurt:8.43,49.93,8.93,50.29"
+      ]
+    },
+    {
+      "extract": "germany",
+      "cluster": "germany-202",
+      "cities": [
+        "munich:11.4861,48.0913,12.0861,48.6163"
+      ]
+    },
+    {
+      "extract": "germany",
+      "cluster": "germany-203",
+      "cities": [
+        "berlin:13.10155,52.22182,13.70155,52.82182",
+        "hamburg:9.74,53.37,10.24,53.73"
+      ]
+    },
+    {
+      "extract": "great-britain",
+      "cluster": "great-britain",
+      "cities": [
+        "leamingtonspa:-1.79,52.11,-1.29,52.47",
+        "twycross:-1.78,52.44,-1.28,52.8"
+      ]
+    },
+    {
+      "extract": "great-britain",
+      "cluster": "great-britain-1",
+      "cities": [
+        "cardiff:-3.29,51.37,-3.07,51.59",
+        "saintpaul:-0.1483,51.4647,-0.0483,51.5647"
+      ]
+    },
+    {
+      "extract": "great-britain",
+      "cluster": "great-britain-205",
+      "cities": [
+        "birmingham:-2.14,52.31,-1.64,52.67",
+        "bristol:-2.83694,51.30015,-2.36024,51.64314",
+        "edinburgh:-3.36,55.86,-3.08,56.02",
+        "glasgow:-4.5,55.68,-4,56.04",
+        "guildford:-0.82,51.06,-0.32,51.42",
+        "horsham:-0.58,50.88,-0.08,51.24",
+        "leeds:-1.76301,53.71222,-1.33924,53.89532",
+        "liverpool:-3.0943,53.30425,-2.79137,53.59055",
+        "london:-0.41672,51.2,0.18328,51.79999",
+        "manchester:-2.55015,53.32968,-2.05909,53.58237"
+      ]
+    },
+    {
+      "extract": "great-britain",
+      "cluster": "great-britain-205",
+      "cities": [
+        "nottingham:-1.36623,52.85728,-1.02829,53.13079"
+      ]
+    },
+    {
+      "extract": "greece",
+      "cluster": "greece",
+      "cities": [
+        "thessaloniki:22.69,40.46,23.19,40.82"
+      ]
+    },
+    {
+      "extract": "greece",
+      "cluster": "us-northeast-68",
+      "cities": [
+        "athens:23.43332,37.68333,24.03332,38.28333"
+      ]
+    },
+    {
+      "extract": "hungary",
+      "cluster": "hungary",
+      "cities": [
+        "budapest:18.78332,47.20001,19.38332,47.80001"
+      ]
+    },
+    {
+      "extract": "ireland-and-northern-ireland",
+      "cluster": "ireland-and-northern-ireland-226",
+      "cities": [
+        "dublin:-6.5489,53.03306,-5.9489,53.63306"
+      ]
+    },
+    {
+      "extract": "italy",
+      "cluster": "italy",
+      "cities": [
+        "sanmarino:12.16667,43.61715,12.76667,44.21715",
+        "vaticancity:12.4,41.86,12.51,41.94"
+      ]
+    },
+    {
+      "extract": "italy",
+      "cluster": "italy-1",
+      "cities": [
+        "florence:11.17,43.68,11.35,43.86",
+        "venice:12.255,45.365,12.405,45.515"
+      ]
+    },
+    {
+      "extract": "italy",
+      "cluster": "italy-37",
+      "cities": [
+        "rome:12.18326,41.59596,12.78326,42.19596"
+      ]
+    },
+    {
+      "extract": "italy",
+      "cluster": "italy-39",
+      "cities": [
+        "milan:9.08,45.4,9.32,45.56"
+      ]
+    },
+    {
+      "extract": "latvia",
+      "cluster": "latvia-261",
+      "cities": [
+        "riga:23.79997,56.65002,24.39997,57.25002"
+      ]
+    },
+    {
+      "extract": "liechtenstein",
+      "cluster": "liechtenstein",
+      "cities": [
+        "vaduz:9.21666,46.83372,9.81667,47.43372"
+      ]
+    },
+    {
+      "extract": "lithuania",
+      "cluster": "lithuania-248",
+      "cities": [
+        "vilnius:25.01663,54.38337,25.61663,54.98337"
+      ]
+    },
+    {
+      "extract": "luxembourg",
+      "cluster": "luxembourg-253",
+      "cities": [
+        "luxembourg:5.83,49.31166,6.43,49.91166"
+      ]
+    },
+    {
+      "extract": "macedonia",
+      "cluster": "north-macedonia-266",
+      "cities": [
+        "skopje:21.13346,41.70001,21.73346,42.30001"
+      ]
+    },
+    {
+      "extract": "monaco",
+      "cluster": "monaco",
+      "cities": [
+        "monaco:7.10691,43.43965,7.70691,44.03965"
+      ]
+    },
+    {
+      "extract": "montenegro",
+      "cluster": "montenegro",
+      "cities": [
+        "podgorica:18.96631,42.16597,19.56631,42.76597"
+      ]
+    },
+    {
+      "extract": "netherlands",
+      "cluster": "netherlands-158",
+      "cities": [
+        "amsterdam:4.61664,52.04997,5.21664,52.64997",
+        "thehague:3.96997,51.78004,4.56996,52.38004"
+      ]
+    },
+    {
+      "extract": "norway",
+      "cluster": "norway-200",
+      "cities": [
+        "oslo:10.44998,59.61669,11.04998,60.21669"
+      ]
+    },
+    {
+      "extract": "norway",
+      "cluster": "norway-201",
+      "cities": [
+        "narvik:17.18,68.26,17.68,68.62"
+      ]
+    },
+    {
+      "extract": "poland",
+      "cluster": "poland",
+      "cities": [
+        "krakow:19.69,49.88,20.19,50.24",
+        "wroclaw:16.79,50.93,17.29,51.29"
+      ]
+    },
+    {
+      "extract": "poland",
+      "cluster": "poland-220",
+      "cities": [
+        "warsaw:20.7,51.95,21.3,52.55"
+      ]
+    },
+    {
+      "extract": "portugal",
+      "cluster": "portugal-139",
+      "cities": [
+        "lisbon:-9.44487,38.42272,-8.84486,39.02272"
+      ]
+    },
+    {
+      "extract": "romania",
+      "cluster": "romania-213",
+      "cities": [
+        "bucharest:25.79994,44.13337,26.39994,44.73337"
+      ]
+    },
+    {
+      "extract": "serbia",
+      "cluster": "serbia-198",
+      "cities": [
+        "belgrade:20.16799,44.51865,20.76799,45.11865"
+      ]
+    },
+    {
+      "extract": "slovakia",
+      "cluster": "slovakia-211",
+      "cities": [
+        "bratislava:16.81698,47.85002,17.41698,48.45002"
+      ]
+    },
+    {
+      "extract": "slovenia",
+      "cluster": "slovenia-154",
+      "cities": [
+        "ljubljana:14.21497,45.75529,14.81497,46.35529"
+      ]
+    },
+    {
+      "extract": "spain",
+      "cluster": "spain",
+      "cities": [
+        "pedroabad:-5.08,37.69,-4.58,38.05"
+      ]
+    },
+    {
+      "extract": "spain",
+      "cluster": "spain-132",
+      "cities": [
+        "murcia:-1.38,37.81,-0.88,38.17"
+      ]
+    },
+    {
+      "extract": "spain",
+      "cluster": "spain-135",
+      "cities": [
+        "madrid:-3.98335,40.10003,-3.38335,40.70003"
+      ]
+    },
+    {
+      "extract": "spain",
+      "cluster": "spain-136",
+      "cities": [
+        "barcelona:1.8686,41.0874,2.4686,41.6874"
+      ]
+    },
+    {
+      "extract": "sweden",
+      "cluster": "sweden-268",
+      "cities": [
+        "stockholm:17.79734,59.05076,18.39734,59.65076"
+      ]
+    },
+    {
+      "extract": "switzerland",
+      "cluster": "switzerland",
+      "cities": [
+        "zurich:8.2555,47.1956,8.8555,47.7206"
+      ]
+    },
+    {
+      "extract": "switzerland",
+      "cluster": "switzerland-204",
+      "cities": [
+        "bern:7.16697,46.61668,7.76697,47.21668"
+      ]
+    },
+    {
+      "extract": "switzerland",
+      "cluster": "us-northeast-74",
+      "cities": [
+        "geneva:5.84002,45.91001,6.44002,46.51001"
+      ]
+    },
+    {
+      "extract": "ukraine",
+      "cluster": "ukraine-247",
+      "cities": [
+        "kyiv:30.27,50.27,30.77,50.63"
+      ]
+    }
+  ]
+}
